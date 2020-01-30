@@ -1,0 +1,12 @@
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\bin\Debug\Empresa.exe.config
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\bin\Debug\Empresa.exe
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\bin\Debug\Empresa.pdb
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\bin\Debug\MySql.Data.dll
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.FrmPrincipal.resources
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.Properties.Resources.resources
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.csproj.GenerateResource.Cache
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.exe
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.pdb
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.FrmLogin.resources
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.FrmUsuario.resources
