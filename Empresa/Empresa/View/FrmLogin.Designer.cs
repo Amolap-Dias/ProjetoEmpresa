@@ -84,6 +84,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Entrar";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pictureBox1
             // 
@@ -130,7 +131,6 @@
             this.Controls.Add(this.txtUsuario);
             this.Name = "FrmLogin";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

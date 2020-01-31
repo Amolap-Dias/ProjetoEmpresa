@@ -10,3 +10,5 @@ C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.exe
 C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.pdb
 C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.FrmLogin.resources
 C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.FrmUsuario.resources
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.btn.resources
+C:\Users\Aluno\Music\Paloma\Empresa\Empresa\obj\Debug\Empresa.Setor.resources

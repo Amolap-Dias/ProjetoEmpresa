@@ -20,21 +20,25 @@ namespace Empresa
         public FrmLogin()
         {
             InitializeComponent();
+            usuario1 = new Usuario();
+            con = new Conexao();
         }
 
         public void lerDados()
         {
-            usuario1 = new Usuario();
             usuario1.usuario = txtUsuario.Text.Trim();
             usuario1.senha = txtSenha.Text.Trim();
-            String senhaCry = CrypHash.ComputeSha256Hash(usuario1.senha); 
+           // String senhaCry = CrypHash.ComputeSha256Hash(usuario1.senha); 
         }
 
-        private void FrmLogin_Load(object sender, EventArgs e)
+        
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
+            con.OpenConnection();
             lerDados();
             String senhaCry = CrypHash.ComputeSha256Hash(usuario1.senha);
-            con.OpenConnection();
+
 
             String sql = $"SELECT * FROM tb_usuario WHERE usuario = '{usuario1.usuario} ' AND senha = ' {senhaCry}'";
             MySqlDataReader reader;
@@ -42,15 +46,18 @@ namespace Empresa
 
             if (reader.HasRows) //(con.OpenConnection())
             {
+                this.Visible = false;
                 MessageBox.Show("Conectou.");
-              //  FrmPrincipal Principal = new FrmPrincipal();
+                FrmPrincipal Principal = new FrmPrincipal();
+
+                Principal.Show();
+                //  FrmPrincipal Principal = new FrmPrincipal();
 
             }
             else
             {
-                MessageBox.Show("Não conectou");
+                MessageBox.Show("Não conectou.");
             }
-
 
         }
 
