@@ -37,9 +37,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtIdSetor = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtStatus = new System.Windows.Forms.TextBox();
             this.dgvSetor = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbStatus = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSetor)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +61,7 @@
             this.btnNovo.TabIndex = 1;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSalvar
             // 
@@ -70,6 +71,7 @@
             this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCancelar
             // 
@@ -79,6 +81,7 @@
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSair
             // 
@@ -88,11 +91,12 @@
             this.btnSair.TabIndex = 4;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(156, 33);
+            this.label1.Location = new System.Drawing.Point(156, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 5;
@@ -101,7 +105,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 75);
+            this.label2.Location = new System.Drawing.Point(9, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 6;
@@ -121,13 +125,6 @@
             this.txtNome.Size = new System.Drawing.Size(352, 20);
             this.txtNome.TabIndex = 8;
             // 
-            // txtStatus
-            // 
-            this.txtStatus.Location = new System.Drawing.Point(52, 72);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(139, 20);
-            this.txtStatus.TabIndex = 9;
-            // 
             // dgvSetor
             // 
             this.dgvSetor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -138,18 +135,26 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtStatus);
+            this.groupBox1.Controls.Add(this.cbStatus);
             this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Controls.Add(this.txtIdSetor);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Location = new System.Drawing.Point(32, 64);
+            this.groupBox1.Location = new System.Drawing.Point(29, 59);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(562, 102);
+            this.groupBox1.Size = new System.Drawing.Size(566, 102);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados";
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.FormattingEnabled = true;
+            this.cbStatus.Location = new System.Drawing.Point(52, 66);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(121, 21);
+            this.cbStatus.TabIndex = 9;
             // 
             // Setor
             // 
@@ -164,6 +169,7 @@
             this.Controls.Add(this.btnNovo);
             this.Name = "Setor";
             this.Text = "Setor";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Setor_FormClosed);
             this.Load += new System.EventHandler(this.Setor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSetor)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -183,8 +189,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIdSetor;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.DataGridView dgvSetor;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cbStatus;
     }
 }

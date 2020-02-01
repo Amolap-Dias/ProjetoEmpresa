@@ -88,10 +88,7 @@ namespace Empresa
                 Console.WriteLine(ex.Message);
                 return 0;
             }
-            finally
-            {
-                CloseConnection();
-            }
+
         }
 
         //Executar Consulta
@@ -107,10 +104,7 @@ namespace Empresa
                 Console.WriteLine(ex.Message);
                 return null;
             }
-            finally
-            {
-                CloseConnection();
-            }
+
         }
     }
 }

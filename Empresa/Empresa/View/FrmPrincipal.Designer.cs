@@ -45,6 +45,7 @@
             this.btnFuncionario.TabIndex = 0;
             this.btnFuncionario.Text = "Funcionários";
             this.btnFuncionario.UseVisualStyleBackColor = true;
+            this.btnFuncionario.Click += new System.EventHandler(this.btnFuncionario_Click);
             // 
             // btnSetores
             // 
@@ -54,6 +55,7 @@
             this.btnSetores.TabIndex = 1;
             this.btnSetores.Text = "Setores";
             this.btnSetores.UseVisualStyleBackColor = true;
+            this.btnSetores.Click += new System.EventHandler(this.btnSetores_Click);
             // 
             // btnPerfil
             // 
@@ -63,6 +65,7 @@
             this.btnPerfil.TabIndex = 2;
             this.btnPerfil.Text = "Perfil";
             this.btnPerfil.UseVisualStyleBackColor = true;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // btnUsuarios
             // 
@@ -72,23 +75,24 @@
             this.btnUsuarios.TabIndex = 3;
             this.btnUsuarios.Text = "Usuários";
             this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(276, 9);
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(255, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 31);
+            this.label1.Size = new System.Drawing.Size(249, 40);
             this.label1.TabIndex = 4;
             this.label1.Text = "Tela Principal";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Empresa.Properties.Resources.icon_rh;
-            this.pictureBox1.Location = new System.Drawing.Point(282, 104);
+            this.pictureBox1.Location = new System.Drawing.Point(224, 108);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(405, 283);
+            this.pictureBox1.Size = new System.Drawing.Size(462, 302);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -98,12 +102,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(713, 433);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.btnPerfil);
             this.Controls.Add(this.btnSetores);
             this.Controls.Add(this.btnFuncionario);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FrmPrincipal";
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);

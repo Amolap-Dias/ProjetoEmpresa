@@ -30,7 +30,7 @@ namespace Empresa
             txtEmail.ReadOnly = true;
             txtSenha.ReadOnly = true;
             txtUsuario.ReadOnly = true;
-            txtStatus.ReadOnly = true;
+            cbStatus.Enabled = false;
         }
 
         public void desbloquearCampos()
@@ -40,7 +40,7 @@ namespace Empresa
             txtEmail.ReadOnly = false;
             txtSenha.ReadOnly = false;
             txtUsuario.ReadOnly = false;
-            txtStatus.ReadOnly = false;
+            cbStatus.Enabled = true;
         }
 
         private void lerDados()
@@ -50,7 +50,7 @@ namespace Empresa
             usuario1.email = txtEmail.Text;
             usuario1.senha = txtSenha.Text;
             usuario1.usuario = txtUsuario.Text;
-            usuario1.status = Boolean.Parse(txtStatus.ToString().Trim());
+            usuario1.status = Boolean.Parse(cbStatus.ToString().Trim());
             usuario1.id_perfil = int.Parse(txtID.ToString().Trim());
         }
 
@@ -77,7 +77,7 @@ namespace Empresa
             txtEmail.Text = "";
             txtSenha.Text = "";
             txtUsuario.Text = "";
-            txtStatus.Text = "";
+            cbStatus.Text = "";
             cbPerfil.Text = "";
         }
 
@@ -114,8 +114,8 @@ namespace Empresa
             }
             cbPerfil.DataSource = null;
             cbPerfil.DataSource = listPerfil;
-            cbPerfil.DisplayMember = "nomePaciente";
-            cbPerfil.ValueMember = "idPaciente";
+            cbPerfil.DisplayMember = "nome";
+            cbPerfil.ValueMember = "id";
         }
 
        public void atualizarGrid()
@@ -174,7 +174,7 @@ namespace Empresa
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Tem certeza que deseja cancelar?","Cancelar",MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.Yes) ;
+            if (MessageBox.Show("Tem certeza que deseja cancelar?","Cancelar",MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.Yes);
             {
                 this.Close();
             }
@@ -183,6 +183,11 @@ namespace Empresa
         private void btnSair_Click(object sender, EventArgs e)
         {
          
+        }
+
+        private void FrmUsuario_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
